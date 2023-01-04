@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/null.css">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Homework-5</title>
+</head>
+<body>
+	<div class="wrapper">
+		<header class="header"></header>
+		<main class="page">
+			<div class="page__container">
+				<div class="firstExamp">
+					<div class="firstExamp__block">
+						<form action="#" class="firstExamp-form form-big"  method="POST">
+							<div class="form-big__line">
+								<label class="form-big__label" for="your-name">Твое имя</label>
+								<input id="your-name" autocomplete="off" type="text" name="name" class="form-big__input">
+							</div>
+							<div class="form-big__line">
+								<label class="form-big__label" for="your-email">Твой email</label>
+								<input id="your-email" autocomplete="off" type="email" name="email" class="form-big__input">
+							</div>
+							<div class="form-big__line">
+								<label class="form-big__label" for="thema">Тема сообщения</label>
+								<input id="thema" autocomplete="off" type="text" name="thema" class="form-big__input input-select">
+								<!-- <div class="form-big__decor-block"></div> -->
+							</div>
+							<div class="form-big__line">
+								<label class="form-big__label" >Текст *</label>
+								<textarea class="form-big__textarea" name="message" cols="50" rows="10"></textarea>
+							</div>
+							<div class="form-big__line line-big">
+								<label class="form-big__label" >Защита от спама *</label>
+								<input autocomplete="off" type="text" name="spam"  class="form-big__input form-big__input--small">
+								<input autocomplete="off" type="text" name="chek"  class="form-big__input form-big__input--height">
+								<button class="button-change" type="button">сменить картинку</button>
+							</div>
+							<button type="submit" class="form-big__button"><span>отправить</span></button>
+						</form>
+					</div>
+				</div>
+				<div class="page__block-sign-up">
+					<form action="#" class="page__form form" method="POST">
+						<h2 class="form__title">Sign up</h2>
+						<div class="form__line">
+							<label class="form__label" for="name-01">Name</label>
+							<input id="name-01" autocomplete="off" required type="text" name="name" class="form__input">
+						</div>
+						<div class="form__line">
+							<label class="form__label" for="email-02">Email</label>
+							<input id="email-02" autocomplete="off" required type="text" name="email" class="form__input">
+						</div>
+						<div class="form__line">
+							<label class="form__label" for="password">Password</label>
+							<input id="password" autocomplete="off" required type="password" name="password" class="form__input">
+						</div>
+						<div class="form__line">
+							<label class="form__label" for="password">Confirmation</label>
+							<input autocomplete="off" required type="password" name="password" class="form__input">
+						</div>
+						<div class="form__line">
+							<button type="submit" class="form__button">Create my account</button>
+						</div>
+					</form>
+				</div>
+				<div class="page__block-contact-form contact">
+					<div class="contact__block">
+						<form action="#" class="contact__form form-contact" method="POST">
+							<div class="form-contact__title">CONTACT FORM</div>
+							<div class="form-contact__line">
+								<label class="form-contact__label" for="name-03"><span class="form-contact__span">Full name *</span>
+								</label>
+								<input id="name-03" autocomplete="off" required type="text" name="name" class="form-contact__input">
+							</div>
+							<div class="form-contact__line">
+								<label class="form-contact__label" for="email-03"><span class="form-contact__span">Email *</span></label>
+								<input id="email-03" autocomplete="off" required type="email" name="form[email]" class="form-contact__input">
+							</div>
+							<div class="form-contact__line">
+								<label class="form-contact__label" for="subject"><span class="form-contact__span">Subject *</span></label>
+								<input id="subject" autocomplete="off" required type="text" name="subject" class="form-contact__input">
+							</div>
+							<div class="form-contact__line line-message">
+								<label class="form-contact__label"><span class="form-contact__span">Message *</span></label>
+								<textarea autocomplete="off" name="textarea" class="form-contact__area">
+								</textarea>
+								<div class="form-contact__button">
+									<button type="submit" class="button">Submit Form</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+				<div class="page__login login">
+					<div class="login__block">
+						<form action="#" class="form__login login-form" method="POST">
+							<h2 class="login-form__title">Login form</h2>
+							<div class="login-form__content">
+								<div class="login-form__line">
+									<label class="login-form__label" for="email-login">Email</label>
+									<div class="line-input">
+										<input id="email-login" autocomplete="off" type="email" name="email" class="login-form__input">
+										<div class="login-form__image">
+											<img src="./icon/profile.svg" alt="icon">
+										</div>
+									</div>
+								</div>
+								<div class="login-form__line">
+									<label class="login-form__label" for="password-login">Password</label>
+								   <div class="line-input">
+										<input id="password-login" autocomplete="off" type="password" name="password" class="login-form__input">
+										<div class="login-form__image">
+											<img src="./icon/lock.svg" alt="icon">
+										</div>
+								   </div>
+								</div>
+								<div class="login-form__chk">
+									<a class="login-form__link" href="#">Forgot password?</a>
+									<div class="login-form__line-chk">
+										<input id="keep"  name="checkbox" type="checkbox"  class="input-chk">
+										<label class="login-form__line-chk-label" for="keep">Keep me logged in</label>
+									</div>
+								</div>
+								<div class="form__action action">
+									<a href="#" class="action__link">Register</a>
+									<button type="submit" class="action__button">Log in</button>
+								</div>
+							</div>
+							
+						</form>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer class="footer"></footer>
+	</div>
+</body>
+</html>
